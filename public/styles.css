@@ -4,3 +4,54 @@ body {
 #root {
   height: 100%;
 }
+
+input {
+  padding: 5px;
+  width: 120px;
+  margin-top:10px;
+}
+.item {
+  background-color: #efefef;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1px;
+  padding: 8px 12px;
+  width: 120px;
+}
+
+.item:hover {
+  background-color: yellowgreen;
+}
+
+.animation-appear {
+  opacity: 0;
+  transform: translateX(-250px);
+}
+
+.animation-appear.animation-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.3s;
+}
+
+.animation-enter {
+  opacity: 0;
+  transform: translateX(-250px);
+}
+
+.animation-enter.animation-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.3s;
+}
+
+.animation-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animation-leave.animation-leave-active {
+  opacity: 0;
+  transform: translateX(-250px);
+  transition: 0.3s;
+}
